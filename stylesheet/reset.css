@@ -1,0 +1,120 @@
+Ecod
+
+
+Rechercher dans Google Drive
+
+Drive
+.
+Chemin d'accès au dossier
+Mon Drive
+Cours communs
+HTML/CSS
+real-tea-version-fabien-commentée.zip (Unzipped Files)
+real-tea-version-fabien-commentée
+css
+NOUVEAU 
+Dossiers et vues
+Mon DriveRéduit
+Partagés avec moi
+Google Photos
+Récents
+Suivis
+Corbeille
+Télécharger Drive pour Mac
+596 Mo utilisés sur 15 Go
+Acheter plus d'espace de stockage
+Nom
+Propriétaire
+Dernière modification
+
+style.css
+moi
+30 nov. 2015
+Non sélectionné
+
+reset.css
+moi
+30 nov. 2015
+Sélectionné
+Feuille de style
+reset.css
+Détails
+Activité
+reset.css
+Informations de partage
+E
+G
+
+S
+Informations générales
+Type
+Feuille de style
+Size
+1 Ko (1 139 octets)
+Espace de stockage utilisé
+1 Ko (1 139 octets)
+Emplacement
+css
+Propriétaire
+moi
+Modifié
+le 30 nov. 2015 par moi
+Ouvert
+le 22:38 par moi
+Créé
+30 nov. 2015 avec ZIP Extracteur
+Description
+Ajouter une description
+Autorisations de téléchargement
+Les lecteurs peuvent télécharger
+Fermé 
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

@@ -1,0 +1,62 @@
+/*SITE FAIT PAR SCRATTO - 2016 */
+		/*BLEBLE POWER*/
+
+
+
+/*HEADER*/
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#cover{
+	height: 50%;
+	display: flex;
+	position:relative;
+}
+
+#logo-titre{
+	width: 22%;
+	height: 100%;
+	position: absolute;
+}
+
+#bloc-logo{
+	display: flex;
+	align-items: center;
+	background-color: black;
+	border-bottom: white 1px solid;
+	color: white;
+}
+
+#bloc-logo h1{
+	font-size: 20px;
+	margin: auto;
+}
+
+#bloc-logo img{
+	padding: 20px;
+	height: auto;
+}
+
+#bloc-titre{
+	background-color: black;
+	color: white;
+	height: 100%;
+}
+
+#bloc-titre h2{
+	margin: 0;
+	padding: 40px 20px;
+	font-size: 34px;
+}
+
+#photo-cover{
+	background-color: red
+	
+}
+
+
+
