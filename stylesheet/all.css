@@ -507,18 +507,52 @@ nav{
 }
 
 .photo-olivier-1{
-    background: url('../images/olivierPro.jpg') no-repeat center;
+    position: relative;
+    background: url('../images/olivierProtrait2.jpg') no-repeat center;
     background-size: cover;
+}
+
+.photo-olivier-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background: url('../images/olivierPro.jpg') red no-repeat center center;
+    background-size: cover;
+}
+
+.photo-olivier-1:hover::before,
+.photo-olivier-1:focus::before{
+    opacity: 1;
 }
 
 .photo-olivier-2{
+    position: relative;
     background: url('../images/olivierPro.jpg') no-repeat center;
     background-size: cover;
 }
 
-.photo-olivier-2:hover{
-    background: url('../images/olivierPro.jpg') no-repeat center;
+.photo-olivier-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background: url('../images/olivierProtrait2.jpg') red no-repeat center center;
     background-size: cover;
+}
+
+
+.photo-olivier-2:hover::before,
+.photo-olivier-2:focus::before{
+    opacity: 1;
 }
 
 .CTA{
@@ -564,6 +598,7 @@ nav{
     margin-top: 20px;
     width: 10%;
 }
+
 
 
 /*RESPONSIVE*/
@@ -697,6 +732,8 @@ nav{
      width: 100%; 
     }
 }
+
+
 
 
 
