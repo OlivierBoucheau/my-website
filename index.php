@@ -13,12 +13,11 @@
 
 </html>
 
-<body>
+<body id="body-home">
 	<div id="container-home">
 
 		<section class="header-page">
 			<h1>MES PASSIONS</br>L'IMAGE ET LE WEB</h1>
-			<h2></h2>
 		</section>
 
 		<section id="work">

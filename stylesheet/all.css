@@ -98,9 +98,12 @@ nav{
 
 /*HOMEPAGE*/
 
+#body-home{
+    background-color: crimson;
+}
+
 #container-home{
-	background-color: crimson;
-	padding: 120px 120px;
+	padding: 5%;
 }
 
 #container-home a{
@@ -110,9 +113,9 @@ nav{
 
 .bloc-work{
     background-color: black;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 0px auto 120px;
+    margin: 0px auto 80px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -125,9 +128,9 @@ nav{
 
 .bloc-about{
     background-color: black;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 0px auto 120px;
+    margin: 0px auto 80Px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -177,8 +180,7 @@ nav{
     height: 350px;
      background: url('../images/fond-workbw.png') no-repeat center center;
     background-size: cover;
-    transition: 1.5s ease-in-out;
-    transition-delay: 0.3s;
+    transition: 0.5s ease-in-out;
 }
 
 .bloc-work:hover .bloc-photo-1{
@@ -193,8 +195,7 @@ nav{
     height: 350px;
     background: url('../images/photo-bloc-bw.png') no-repeat center center;
     background-size: contain;
-    transition: 1.5s ease-in-out;
-    transition-delay: 0.3s;
+    transition: 0.5s ease-in-out;
 }
 
 .bloc-about:hover .bloc-photo-2{
@@ -229,10 +230,14 @@ nav{
     margin: 0;
 }
 
-/*PAGE-WORK*/
+/*Portfolio*/
+
+#all-project{
+    width: 100%;
+}
 
 #container-portfolio{
-    padding: 50px 0;
+    padding: 5%;
     background-color: coral;
 }
 
@@ -383,7 +388,7 @@ nav{
     background-color: floralwhite;
 }
 
-.bandeau-single{
+#bandeau-single{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -399,7 +404,14 @@ nav{
 .link-single a{
     font-size: 2em;
     text-decoration: none;
-    color: crimson;
+    background-color: crimson;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    padding: 0 3%;
+    color: whitesmoke;
+    border-radius: 55px;
+    border: black 3px solid;
 }
 
 .link-single a:hover{
@@ -504,6 +516,11 @@ nav{
     background-size: cover;
 }
 
+.photo-olivier-2:hover{
+    background: url('../images/olivierPro.jpg') no-repeat center;
+    background-size: cover;
+}
+
 .CTA{
     text-align: center;
     width: 35%;
@@ -555,6 +572,14 @@ nav{
 
 @media (max-width:768px){
 
+    .header-page h1{
+        font-size: 2em;
+    }
+
+    .header-page {
+        margin-bottom: 50px;
+    }
+
   .bloc-about{
      background-color: #04B5FF;
     }
@@ -581,6 +606,11 @@ nav{
   .bloc-work .description p, .bloc-about .description p{
     padding:10px 0 30px;
   }
+
+@media (max-width: 425px){
+
+    #container-home{
+    }
 
 }
 
@@ -637,7 +667,35 @@ nav{
 
     .linkedin img{
     width: 40%;
+    }
 }
+
+/*PORTFOLIO*/
+
+@media (max-width: 768px){
+
+    .header-page h2{
+        font-size: 1.3em;
+    }
+
+    .header-page h3{
+        font-size: 1em;
+    }
+
+    .row-projet{
+        display: block;
+        width: 100%;
+    }
+
+    .bloc-projet-cforgood,.bloc-projet-ericsson,.bloc-projet-tv7, .bloc-projet-tf6, .bloc-projet-bruna, .bloc-projet-rmc, .bloc-projet-moondaka, .bloc-projet-clinique{
+        width: 70%;
+        margin: 0 auto 50px;
+    }
+
+    .contenu-projet {
+     background-color: black; 
+     width: 100%; 
+    }
 }
 
 

@@ -22,7 +22,7 @@
 		</section>
 
 
-
+	<div id="all-project">
 		<section class="row-projet">
 			
 			<a href="single-project.php" class="bloc-projet-rmc">
@@ -35,12 +35,12 @@
 					<div class="description-projet">
 						<h1>RMC DÉCOUVERTE</h1>
 						<h2>POSTE</h2>
-						<P>Chargé de la diffusion des programmes en régie finale.</P>
+						<P>Technicien supérieur de diffusion.</P>
 						<h2>TECHNOLOGIES</h2>
-						<ul>
+					<!-- 	<ul>
 							<li><img src="" alt="MBT"></li>
 							<li><img src="" alt="ORACLE"></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
@@ -56,12 +56,12 @@
 					<div class="description-projet">
 						<h1>ERICSSON</h1>
 						<h2>POSTE</h2>
-						<P>Chargé de la diffusion des programmes pour plusieurs chaines de télévision à Paris.</P>
+						<P>Technicien supérieur de diffusion.</P>
 						<h2>TECHNOLOGIES</h2>
-						<ul>
+					<!-- 	<ul>
 							<li><img src="" alt="MBT"></li>
 							<li><img src="" alt="ORACLE"></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
@@ -79,11 +79,11 @@
 					<div class="description-projet">
 						<h1>TF6 & SERIE CLUB</h1>
 						<h2>POSTE</h2>
-						<P>Chargé de la diffusion des programmes de ces deux chaines en régie finale.</P>
+						<P>Technicien supérieur de diffusion.</P>
 						<h2>TECHNOLOGIES</h2>
-						<ul>
+				<!-- 		<ul>
 							<li><img src="" alt="MBT"></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
@@ -99,14 +99,13 @@
 					<div class="description-projet">
 						<h1>TV7</h1>
 						<h2>POSTE</h2>
-						<P>Chargé de la Diffusion des programmes en régie.</p>
-						<p>Monteur et cadreur pour plusieurs émissions.</P>
+						<P>Technicien de diffusion / Monteur / Cadreur.</P>
 						<h2>TECHNOLOGIES</h2>
-						<ul>
+<!-- 						<ul>
 							<li><img src="" alt="MBT"></li>
 							<li><img src="" alt="Adobe créative suite"></li>
 							<li><img src="" alt="Caméra Panasonic"></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
@@ -124,17 +123,15 @@
 					<div class="description-projet">
 						<h1>CFORGOOD</h1>
 						<h2>POSTE</h2>
-						<P>Intégrateur pour plusieurs pages du site web.</p>
-						<p>webdesigner.</p>
-						<p>chargé de la partie audiovisuel.</P>
+						<P>Intégrateur web / webdesigner / technicien audiovisuel</p>
 						<h2>TECHNOLOGIES</h2>
-						<ul>
+<!-- 						<ul>
 							<li><img src="" alt="HTML/CSS"></li>
 							<li><img src="" alt="JQUERY"></li>
 							<li><img src="" alt="GIT/GITHUB"></li>
 							<li><img src="" alt="SKETCH"></li>
 							<li><img src="" alt="PHOTOSHOP/ILLUSTRATOR"></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
@@ -150,16 +147,13 @@
 					<div class="description-projet">
 						<h1>La Clinique des Poupées</h1>
 						<h2>POSTE</h2>
-						<P>Integrateur web</p>
-						<P>Concepteur de la partie technique du site</p>
-						<P>SEO</p>
-						<P>Webmarketing</P>
+						<P>Integrateur web / Concepteur Web / SEO / Webmarketing</P>
 						<h2>TECHNOLOGIES</h2>
-						<ul>
+					<!-- 	<ul>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
@@ -176,16 +170,15 @@
 					</div>
 
 					<div class="description-projet">
-						<h1>BRUNA</h1>
+						<h1>COUTEAUX BRUNA</h1>
 						<h2>POSTE</h2>
-						<P>Concepteur, integrateur et developpeur du nouveau site internet (en cours)</P>
-						<P>Photographe et technicien audiovisuel</P>
+						<P>Concepteur et integrateur web /Photographe et technicien audiovisuel</P>
 						<h2>TECHNOLOGIES</h2>
-						<ul>
+					<!-- 	<ul>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
@@ -198,20 +191,21 @@
 					</div>
 
 					<div class="description-projet">
-						<h1>MOONDAKA</h1>
+						<h1>MOONDAKA SURFBOARDS</h1>
 						<h2>POSTE</h2>
 						<P>Cadreur, Monteur.</P>
 						<h2>TECHNOLOGIE</h2>
-						<ul>
+						<!-- <ul>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
-						</ul>
+						</ul> -->
 						
 					</div>
 				</div>
 			</a>
 		</section>
+	</div>
 
 	</div>
 </body>
