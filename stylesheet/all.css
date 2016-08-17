@@ -9,6 +9,7 @@ body{
 	margin: 0;
 	padding: 0;
     font-family: 'Alegreya Sans', sans-serif;
+    color: #2c1301;
 }
 
 h1, h2, h3, h4, li{
@@ -99,7 +100,7 @@ nav{
 
 #container-home{
 	background-color: crimson;
-	padding: 120px 0;
+	padding: 120px 120px;
 }
 
 #container-home a{
@@ -109,7 +110,7 @@ nav{
 
 .bloc-work{
     background-color: black;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0px auto 120px;
     padding: 20px;
@@ -120,12 +121,11 @@ nav{
 
 .bloc-work:hover{
     background-color: coral;
- 
 }
 
 .bloc-about{
     background-color: black;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0px auto 120px;
     padding: 20px;
@@ -172,9 +172,36 @@ nav{
     z-index: 0;
 }*/
 
-.bloc-photo{
+.bloc-photo-1{
     width: 40%;
     height: 350px;
+     background: url('../images/fond-workbw.png') no-repeat center center;
+    background-size: cover;
+    transition: 1.5s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.bloc-work:hover .bloc-photo-1{
+    width: 40%;
+    height: 350px;
+    background: url('../images/fond-work.png') no-repeat center center;
+    background-size: cover;
+}
+
+.bloc-photo-2{
+    width: 40%;
+    height: 350px;
+    background: url('../images/photo-bloc-bw.png') no-repeat center center;
+    background-size: contain;
+    transition: 1.5s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.bloc-about:hover .bloc-photo-2{
+    width: 40%;
+    height: 350px;
+    background: url('../images/photo-bloc-couleur.png') no-repeat center center;
+    background-size: contain;
 }
 
 .bloc-work .bloc-photo img{
@@ -205,6 +232,273 @@ nav{
 .description p{
     padding: 20px 100px;
     margin: 0;
+}
+
+/*PAGE-WORK*/
+
+#container-portfolio{
+    padding: 50px 0;
+    background-color: coral;
+}
+
+.header-page{
+    text-align: center;
+    margin-bottom: 120px;
+    color: white;
+}
+
+.header-page h1{
+    font-size: 4em;
+}
+
+.header-page h2{
+    font-size: 1.5em;
+}
+
+.row-projet{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.row-projet a{
+    text-decoration: none;
+}
+
+.bloc-projet-cforgood,.bloc-projet-ericsson,.bloc-projet-tv7, .bloc-projet-tf6, .bloc-projet-bruna, .bloc-projet-rmc, .bloc-projet-moondaka, .bloc-projet-clinique{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35.16%;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.bloc-projet-cforgood:hover{
+    background-color: #36D3DA;
+}
+.bloc-projet-ericsson:hover{
+    background-color: #00285E;
+}
+.bloc-projet-rmc:hover{
+    background-color: #8ECEE7;
+}
+.bloc-projet-tf6:hover{
+    background-color: #ED1B24;
+}
+.bloc-projet-tv7:hover{
+    background-color: #DE1213;
+}
+.bloc-projet-bruna:hover{
+    background-color: #CAD4DD;
+}
+.bloc-projet-moondaka:hover{
+    background-color: gold;
+}
+.bloc-projet-clinique:hover{
+    background-color: #E83B69;
+}
+
+.contenu-projet{
+    background-color: white;
+    width: 97%;
+}
+
+.photo-projet{
+    height: auto;
+    text-align: center;
+    background:no-repeat center white;
+    background-size: contain;
+}
+
+.contenu-projet img{
+    width: 44%;
+    height: auto;
+}
+
+.description-projet{
+    max-height: 270px; 
+    padding: 10%;
+    color: white;
+    background: url('../images/fond-container.jpg');
+}
+
+.description-projet ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.description-projet ul li{
+    margin: 0;
+}
+
+.description-projet h1, .description-projet .bouton-projet{
+    text-align: center;
+}
+
+.description-projet h1{
+    margin: 0 0 40px;
+    font-size: 1.125em;
+}
+
+.description-projet h2{
+    margin: 0 0 20px;
+    font-size: 1.125em;
+}
+
+.description-projet p{
+    font-size: 1em;
+}
+
+.description-projet ul{
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.description-projet li{
+    display: inline-block;
+    width: 5%;
+    margin-right: 20px;
+}
+
+.bouton-projet{
+    width: 51.16%;
+    margin: 0 auto;
+    height: 50px;
+    background-color: purple;
+}
+
+.bouton-projet a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125em;
+    display: block;
+    height: 100%;
+    padding-top: 8%;
+}
+
+/*SINGLE PROJECT*/
+
+#container-single{
+    padding: 0 50px 50px 50px;
+    text-align: center;
+    background-color: floralwhite;
+}
+
+.bandeau-single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: crimson;
+    height: 180px;
+}
+
+.link-single{
+    padding-top: 100px;
+}
+
+.link-single a{
+    font-size: 2em;
+    text-decoration: none;
+    color: crimson;
+}
+
+.link-single a:hover{
+    color: coral;
+}
+
+#container-single .lists-description{
+    display: flex;
+    justify-content: space-around;
+}
+
+#container-single ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#description-single .list-project-description{
+    margin-top: 100px;
+}
+
+#breadcrumb {
+    padding-top: 50px;
+}
+
+#breadcrumb a{
+    color: black;
+    text-decoration: none;
+}
+
+.on{
+    font-family: 'roboto';
+    font-weight: 700;
+}
+
+/*PAGE-OLIVIER*/
+
+#body-olivier{
+    background: lightseagreen;
+}
+
+#container-olivier{
+    width: 90%;
+    margin: 100px auto;
+}
+
+.header-page-olivier{
+    text-align: center;
+    color: whitesmokee;
+    margin-bottom: 100px;
+}
+
+.header-page-olivier h1{
+    font-size: 2.8em;
+}
+
+.header-page-olivier h2{
+    font-size: 1.6em;
+}
+
+#professionnel, #personnel{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#professionnel h1, #personnel h1{
+    margin: 0;
+}
+
+#professionnel{
+    margin-bottom: 80px;
+    background-color: darkcyan;
+    color: whitesmoke;
+    border: whitesmoke 23px solid;
+    box-sizing: border-box;
+}
+
+#personnel{
+    background-color: darkseagreen;
+    color: whitesmoke;
+    box-sizing: border-box;
+    border: whitesmoke 23px solid;
+}
+
+.contenu-olivier-pro, .contenu-olivier-perso{
+    margin: 10px 40px;
+    width: 70%;
+}
+
+.photo-olivier{
+    background: url('../images/olivierPro.jpg') no-repeat center center;
+    min-width: 30%;
+    background-size: cover;
+    margin: 10px;
 }
 
 

@@ -14,8 +14,14 @@
 
 <body>
 	<div id="container-home">
+
+		<section id="header-page">
+			<h1>MES PASSIONS : L'IMAGE ET LE WEB</h1>
+			<h2></h2>
+		</section>
+
 		<section id="work">
-			<a href="#">
+			<a href="portfolio.php">
 				<div class="bloc-work">
 					<div class="container-project">
 						<div class="description">
