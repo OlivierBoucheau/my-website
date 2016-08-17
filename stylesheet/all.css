@@ -217,20 +217,15 @@ nav{
 
 .description{
     width: 60%;
-    min-height: 350px;
-    position: relative;
-    z-index: 1;
-
-
 }
 
 .description h1{
-    padding: 50px 100px 0;
+    padding: 0 40px;
     margin: 0;
 }
 
 .description p{
-    padding: 20px 100px;
+    padding: 20px 40px;
     margin: 0;
 }
 
@@ -452,7 +447,7 @@ nav{
 
 .header-page-olivier{
     text-align: center;
-    color: whitesmokee;
+    color: whitesmoke;
     margin-bottom: 100px;
 }
 
@@ -494,11 +489,156 @@ nav{
     width: 70%;
 }
 
-.photo-olivier{
-    background: url('../images/olivierPro.jpg') no-repeat center center;
+.photo-olivier-1, .photo-olivier-2{
     min-width: 30%;
-    background-size: cover;
     margin: 10px;
 }
+
+.photo-olivier-1{
+    background: url('../images/olivierPro.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.photo-olivier-2{
+    background: url('../images/olivierPro.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.CTA{
+    text-align: center;
+    width: 35%;
+    margin: 50px auto;
+    padding: 5px;
+    color: whitesmoke;
+    border-radius: 55px;
+    border: black 5px solid;
+}
+
+#link-cv{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#link-cv a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#link-cv h2{
+    margin: 0;
+    padding: 20px; 
+}
+
+.cta-en{
+    background: url('../images/drapeau-en.png') steelblue no-repeat right;
+}
+
+.cta-fr{
+    background: url('../images/drapeau-fr.png') steelblue no-repeat right;
+}
+
+.linkedin {
+    text-align: center;
+}
+
+.linkedin img{
+    margin-top: 20px;
+    width: 10%;
+}
+
+
+/*RESPONSIVE*/
+
+/*INDEX*/
+
+@media (max-width:768px){
+
+  .bloc-about{
+     background-color: #04B5FF;
+    }
+
+  .bloc-work{
+     background-color: coral;
+    }
+
+  .bloc-photo-1, .bloc-photo-2{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .bloc-work .description , .bloc-about .description {
+    width: 90%;
+  }
+
+  .bloc-work .description h1, .bloc-about .description h1{
+    padding: 30px 0 40px;
+    text-align: center;
+  }
+
+  .bloc-work .description p, .bloc-about .description p{
+    padding:10px 0 30px;
+  }
+
+}
+
+
+/*PAGE OLIVIER*/
+
+@media (min-width: 769px){
+    #photo-mobile{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}
+
+@media (max-width:768px){
+
+    .photo-olivier-1, .photo-olivier-2{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #photo-mobile{
+        width: 50%;
+        margin: 40px auto;
+        padding: 40% 0;
+        background: url('../images/olivierPro.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .header-page-olivier {
+        margin-bottom: 40px;
+    }
+
+    #link-cv{
+        display: block;
+    }
+
+    .CTA{
+        width: 40%;
+    }
+
+
+    .linkedin img{
+    width: 30%;
+}
+
+
+@media (max-width: 425px){
+
+    .CTA{
+        width: 70%;
+    }
+
+    .linkedin img{
+    width: 40%;
+}
+}
+
 
 

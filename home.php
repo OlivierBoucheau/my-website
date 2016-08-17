@@ -4,6 +4,7 @@
 	<head>
 		<title> ACCUEIL | page d'accueil du site de Olivier Boucheau | technicien audiovisuel et professionnel du web </title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" href="stylesheet/all.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100italic,300italic,400italic,500,500italic,700,700italic,900,100' rel='stylesheet' type='text/css'>

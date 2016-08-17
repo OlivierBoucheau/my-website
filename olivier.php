@@ -4,6 +4,7 @@
 	<head>
 		<title> Olivier Boucheau | Biographie et présentation du Scratto | Webdesigner intégrateur web caméraman monteur vidéo photographe surfeur et amateur de chocolat</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" href="stylesheet/all.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100italic,300italic,400italic,500,500italic,700,700italic,900,100' rel='stylesheet' type='text/css'>
@@ -19,8 +20,12 @@
 			<h3>BTS Audiovisuel + License conception et réalisation de produits en ligne.</h3>
 		</section>
 
+		<section id="photo-mobile">
+			
+		</section>
+
 		<section id="professionnel">
-			<div class="photo-olivier">
+			<div class="photo-olivier-1">
 				<!-- photo in css -->
 			</div>
 
@@ -46,10 +51,33 @@
 				<p>Mon travail oblige, je suis aussi passioné d'image, que ce soit vidéo ou photo, j'adore composer, chercher de nouveaux angles et prendre les plus belles images possible. Je fais également beaucoup de montage de mes films personnels.</p>
 			</div>
 
-			<div class="photo-olivier">
-				<img src="images/olivierPro.jpg" alt="photo d'olivier">
+			<div class="photo-olivier-2">
+				<!-- image in css -->
 			</div>
 		</section>
+
+		<div id="link-cv">
+			
+				<div class="CTA cta-en">
+					<a href="">
+						<h2>Download my cover</h2>
+					</a>
+				</div>
+			
+				<div class="CTA cta-fr">
+					<a href="">
+						<h2>Télécharger mon CV</h2>
+					</a>
+				</div>
+			
+		</div>
+
+		<div class="linkedin">
+			<a href="https://fr.linkedin.com/in/olivier-boucheau-1b615097">
+				<img src="images/linkedin.png" alt="logo et lien vers profil linkedin d'olivier boucheau">
+			</a>
+		</div>
+
 	</div>
 </body>
 
