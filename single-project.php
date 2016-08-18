@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" href="stylesheet/all.css">
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100italic,300italic,400italic,500,500italic,700,700italic,900,100' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,100,100italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300" rel="stylesheet">
 	</head>
 
 

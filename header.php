@@ -2,36 +2,27 @@
 
 <html>
 	<head>
-		<title> ACCUEIL | page d'accueil du site de Olivier Boucheau | technicien audiovisuel et professionnel du web </title>
+		<title> </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" href="stylesheet/all.css">
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100italic,300italic,400italic,500,500italic,700,700italic,900,100' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300" rel="stylesheet">
 	</head>
 
 	<body>
 		<header>
-			<div id="cover">
-				<div id="logo-titre">
-					<div id="bloc-logo">
-						<img src="images/logoTemporaire.png" alt="logo olivier boucheau">
-						<h1>OLIVIER</br>BOUCHEAU</h1>
-					</div>
-					<div id="bloc-titre"> 
-						<h2>WEB</br>AUDIOVISUEL .</h2>
-					</div>
-				</div>
-
-				<div id="photo-cover">
-					<img src="images/audiovisuel.png" alt="image d'illustration du site, du materiel audiovisuel et web">
-				</div>
-			</div>
-
-			<nav>
+			<nav id="navbar">
 				<ul id="list-nav">
-					<li>A PROPOS</li>
-					<li>REALISATIONS</li>
-					<li>CONTACT</li>
+					<li><a href="http://localhost/mon-site/index.php" class="manuscrite">Olivier Boucheau</a></li>
+					<li><a href="http://localhost/mon-site/olivier.php" class="amatic">A PROPOS</a></li>
+					<li><a href="http://localhost/mon-site/portfolio.php" class="amatic">PORTFOLIO</a></li>
+					<li><a href="#" class="amatic">CONTACT</a></li>
+				</ul>
+
+				<ul class="social">
+					<li><a href="#"><img src="images/instagram.png" alt="insta"></a></li>
+					<li><a href="#"><img src="images/linkedin.png" alt="linkedin"></a></li>
 				</ul>
 			</nav>
 		</header>

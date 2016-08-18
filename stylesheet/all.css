@@ -2,28 +2,79 @@
 		/*BLEBLE POWER*/
 
 
+/*NAV*/
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.manuscrite{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 300;
+    font-size: 2em;
+    text-decoration: none;
+    color: olivedrab;
+    text-shadow: black 0px 0px 0px;
+    padding-right: 50px;
+}
+
+.amatic{
+    text-decoration: none;
+    color: #05182a;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.social img{
+     padding: 0 10px;
+}
 
 /*HEADER*/
 
 body{
 	margin: 0;
 	padding: 0;
-    font-family: 'Alegreya Sans', sans-serif;
     color: #2c1301;
 }
 
-h1, h2, h3, h4, li{
-	font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+h1, h2, h3, h4, li, a{
+	font-family: 'Amatic SC', cursive;
+    font-weight: 700;
 }
 
 h1{
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    color: #FFFCF2;
+}
+
+h2{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #FFFCF2;
+}
+
+h3{
     font-size: 2em;
+    letter-spacing: 2px;
+    color: #FFFCF2;
 }
 
 p{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 300;
     font-size: 1.3em;
-    font-weight: 100;
+    color: #FFFCF2;
 }
 
 #cover{
@@ -48,14 +99,12 @@ p{
 
 	display: inline-block;
 	vertical-align: bottom;
-	font-size: 1em;
+	font-size: 2.5em;
 	color: white;
 	line-height: 0.8;
 }
 
 #bloc-titre h2{
-	font-size: 1.8em;
-	color: white;
 	padding: 50px 20px;
     line-height: 0.7;
 }
@@ -75,9 +124,7 @@ p{
 /*NAV*/
 
 nav{
-	height: 60px;
-	background-color: grey;
-	text-align: right;
+	height: 100px;
 }
 
 #list-nav{
@@ -88,11 +135,11 @@ nav{
 #list-nav li{
 	display: inline-block;
 	color: white;
-	padding: 20px 60px;
+	padding: 20px 30px;
 }
 
 #list-nav li:last-child{
-	margin-right: 100px;
+	margin-right: 50px;
 }
 
 
@@ -238,21 +285,23 @@ nav{
 
 #container-portfolio{
     padding: 5%;
-    background-color: coral;
+    background-color: #0f4880;
 }
 
 .header-page{
     text-align: center;
     margin-bottom: 120px;
-    color: white;
+    color: #FFFCF2;
 }
 
 .header-page h1{
-    font-size: 4em;
+    color: #FFFCF2;
+    letter-spacing: 2px;
 }
 
 .header-page h2{
-    font-size: 1.5em;
+    color: #FFFCF2;
+    letter-spacing: 2px;
 }
 
 .row-projet{
@@ -321,7 +370,6 @@ nav{
 .description-projet{
     max-height: 270px; 
     padding: 10%;
-    color: white;
     background: url('../images/fond-container.jpg');
 }
 
@@ -341,16 +389,16 @@ nav{
 
 .description-projet h1{
     margin: 0 0 40px;
-    font-size: 1.125em;
+    font-size: 2em;
 }
 
 .description-projet h2{
+    font-size: 1.5em;
     margin: 0 0 20px;
-    font-size: 1.125em;
 }
 
 .description-projet p{
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .description-projet ul{
@@ -409,7 +457,7 @@ nav{
     width: 50%;
     margin: 50px auto;
     padding: 0 3%;
-    color: whitesmoke;
+    color: #05182a;
     border-radius: 55px;
     border: black 3px solid;
 }
@@ -442,8 +490,9 @@ nav{
 }
 
 .on{
-    font-family: 'roboto';
+    font-family: 'amatic';
     font-weight: 700;
+    font-style: unset;
 }
 
 /*PAGE-OLIVIER*/
@@ -459,16 +508,26 @@ nav{
 
 .header-page-olivier{
     text-align: center;
-    color: whitesmoke;
+    color: #05182a;
     margin-bottom: 100px;
 }
 
 .header-page-olivier h1{
-    font-size: 2.8em;
+    font-size: 3.5em;
+    color: #FFFCF2;
+    letter-spacing: 2px;
 }
 
 .header-page-olivier h2{
-    font-size: 1.6em;
+    font-size: 2.5em;
+    color: #FFFCF2;
+    letter-spacing: 2px;
+}
+
+.header-page-olivier h3{
+    font-size: 2em;
+    color: #FFFCF2;
+    letter-spacing: 2px;
 }
 
 #professionnel, #personnel{
@@ -483,15 +542,15 @@ nav{
 
 #professionnel{
     margin-bottom: 80px;
-    background-color: darkcyan;
-    color: whitesmoke;
+    background-color: #D8916E;
+    color: #05182a;
     border: whitesmoke 23px solid;
     box-sizing: border-box;
 }
 
 #personnel{
     background-color: darkseagreen;
-    color: whitesmoke;
+    color: #05182a;
     box-sizing: border-box;
     border: whitesmoke 23px solid;
 }
@@ -560,7 +619,7 @@ nav{
     width: 35%;
     margin: 50px auto;
     padding: 5px;
-    color: whitesmoke;
+    color: #05182a;
     border-radius: 55px;
     border: black 5px solid;
 }
@@ -574,7 +633,7 @@ nav{
 
 #link-cv a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #05182a;
 }
 
 #link-cv h2{
@@ -596,8 +655,8 @@ nav{
 
 .linkedin img{
     margin-top: 20px;
-    width: 10%;
 }
+
 
 
 
@@ -609,10 +668,13 @@ nav{
 
     .header-page h1{
         font-size: 2em;
+        color: #FFFCF2;
+        letter-spacing: 2px;
     }
 
     .header-page {
         margin-bottom: 50px;
+
     }
 
   .bloc-about{
@@ -709,8 +771,11 @@ nav{
 
 @media (max-width: 768px){
 
-    .header-page h2{
+    .header-page h1{
         font-size: 1.3em;
+    }
+
+    .header-page h2{
     }
 
     .header-page h3{
