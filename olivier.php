@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 	<head>
 		<title> Olivier Boucheau | Biographie et présentation du Scratto | Webdesigner intégrateur web caméraman monteur vidéo photographe surfeur et amateur de chocolat</title>
 		<meta charset="utf-8">
+		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" href="stylesheet/all.css">
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300" rel="stylesheet">
+		<script src='http://code.jquery.com/jquery-1.10.2.min.js' type="text/javascript" ></script>
 	</head>
 
 
 <body id="body-olivier">
-	<div id="container-olivier">
+
+	<?php include("header.php") ?>
+
+	<div id="container-olivier" class="site-content">
 		<section class="header-page-olivier">
 			<h1>OLIVIER "Scratto" BOUCHEAU</h1>
 			<h2>Technicien audiovisuel / Professionnel du web / Amateur de chocolat et de pizzas.</h2>
@@ -80,6 +85,18 @@
 
 	</div>
 </body>
+
+<script type="text/javascript">
+	<script type="text/javascript">
+		
+		(function($){
+			$('#header__icon').click(function(e){
+			e.preventDefault();
+			$('body').toggleClass('with-sidebar')
+		})
+		})(jQuery);
+		</script>
+</script>
 
 
 </html>

@@ -1,12 +1,22 @@
 /*SITE FAIT PAR SCRATTO - 2016 */
 		/*BLEBLE POWER*/
 
+::selection {
+    background: white;
+    color: black;
+}
 
 /*NAV*/
 
-#navbar{
+.navbar-item{
     display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
     justify-content: space-between;
+    align-items: center;
+    background: #FFFCF2 ;
+    box-shadow: black 0px 1px 10px;
 }
 
 .manuscrite{
@@ -14,8 +24,7 @@
     font-weight: 300;
     font-size: 2em;
     text-decoration: none;
-    color: olivedrab;
-    text-shadow: black 0px 0px 0px;
+    color: #05182a;
     padding-right: 50px;
 }
 
@@ -32,7 +41,7 @@
     justify-content: space-between;
     align-items: flex-start;
     list-style-type: none;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .social img{
@@ -128,18 +137,19 @@ nav{
 }
 
 #list-nav{
-	margin: 0;
+    width: 80%;
+	margin: 0 0 0 20px;
 	padding: 0;
 }
 
 #list-nav li{
 	display: inline-block;
 	color: white;
-	padding: 20px 30px;
+	padding: 2% 2%;
+    border-right: #FFFCF2 1px solid;
 }
 
 #list-nav li:last-child{
-	margin-right: 50px;
 }
 
 
@@ -149,7 +159,7 @@ nav{
     background-color: crimson;
 }
 
-#container-home{
+#container-home, #containerContact{
 	padding: 5%;
 }
 
@@ -279,6 +289,14 @@ nav{
 
 /*Portfolio*/
 
+.inprocess{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: gold;
+    padding: 0 10px;
+}
+
 #all-project{
     width: 100%;
 }
@@ -290,7 +308,7 @@ nav{
 
 .header-page{
     text-align: center;
-    margin-bottom: 120px;
+    margin: 120px 0;
     color: #FFFCF2;
 }
 
@@ -351,6 +369,7 @@ nav{
 }
 
 .contenu-projet{
+    position: relative;
     background-color: white;
     width: 97%;
 }
@@ -502,14 +521,13 @@ nav{
 }
 
 #container-olivier{
-    width: 90%;
-    margin: 100px auto;
+    padding: 5%;
 }
 
 .header-page-olivier{
     text-align: center;
     color: #05182a;
-    margin-bottom: 100px;
+    margin: 120px 0;
 }
 
 .header-page-olivier h1{
@@ -539,6 +557,10 @@ nav{
 #professionnel h1, #personnel h1{
     margin: 0;
 }
+
+#professionnel p, #personnel p{
+    color: #05182a;
+ }
 
 #professionnel{
     margin-bottom: 80px;
@@ -657,10 +679,224 @@ nav{
     margin-top: 20px;
 }
 
+/*PAGE CONTACT*/
 
+#containerContact{
+  background: coral;
+  padding: 5%;
+}
+
+#containerContact h1, #containerContact h2, #containerContact h3{
+  color:#05182a;
+}
+
+#flex-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.introContact{
+  width: 35%;
+  background-color: bisque;
+  padding: 40px 30px;
+  border: indianred solid 15px;
+}
+
+.introContact p{
+    text-align: center;
+    font-family: 'amatic';
+    letter-spacing: 2px;
+    color: #05182a;
+    margin-top: 80px;
+}
+
+.introContact h2{
+    margin-bottom: 80px;
+}
+
+.introContact a{
+  letter-spacing: 2px;
+  font-family: 'Josefin';
+  color: #05182a;
+  margin-bottom: 20px;
+
+}
+
+.formulaire{
+  width: 45%;
+  background: bisque;
+  border: indianred solid 15px;
+}
+
+.formulaire .champs{
+  display: flex;
+  margin:20px;
+}
+
+.formulaire label{
+  text-align: right;
+  width: 150px;
+  padding-right: 20px;
+}
+
+.formulaire input{
+  text-align: left;
+  width: 200px;
+}
+
+.formulaire textarea{
+  text-align: left;
+  width: 350px;
+  height: 160px;
+
+}
+
+#containerContact span{
+  color: #0000b5;
+}
+
+.etoile{
+  background-color: burlywood;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0 40px;
+  color: #05182a;
+}
+
+input[type=submit]{
+  text-align: center;
+  padding: 10px;
+  background-color: burlywood;
+  color: #05182a;
+  border: indianred solid 4px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: 'Josefin';
+
+}
+
+.submit{
+  margin:40px 0;
+  text-align: center;
+}
+
+input:focus, textarea:focus{
+  border: #09d7d9 solid 2px;
+}
 
 
 /*RESPONSIVE*/
+
+
+/*NAV*/
+
+@media (max-width: 769px){
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 66px;
+    line-height: 66px;
+    color: white;
+    background-color: red;
+}
+
+.container{
+    padding: 70px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu{
+    float: left;
+    transform: translateX(0);
+}
+
+.menu a{
+    padding: 0 10px;
+}
+
+.header__logo{
+    padding-left: 20px;
+    float: left;
+}
+
+
+
+/*responsive*/
+
+@media (max-width: 768px){
+
+    .header{
+        position: static;
+    }
+
+    .container{
+        padding-top: 0;
+    }
+
+    .header__icon{
+        display: block;
+        float: left;
+        width: 50px;
+        height: 66px;
+        background-color: blue;
+        cursor: pointer;
+    }
+
+    .header__icon::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 1rem;
+        left: 1rem;
+        width: 1rem;
+        height: 0;
+        box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+    }
+
+    .menu{
+        position: absolute;
+        width: 250px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: indianred;
+        transform: translateX(-250px);
+        transition-duration: 0.3s;
+    }
+
+    a{
+        text-align: center;
+        display: block;
+        height: 40px;
+    }
+
+
+    .with-sidebar #pusher{
+        transform: translateX(250px);
+        opacity: 5s;
+    }
+
+    #pusher{
+        transition-duration: 0.3s;
+        transform: translateX(0);
+    }
+   
+}
+
+
 
 /*INDEX*/
 
@@ -704,12 +940,6 @@ nav{
     padding:10px 0 30px;
   }
 
-@media (max-width: 425px){
-
-    #container-home{
-    }
-
-}
 
 
 /*PAGE OLIVIER*/
@@ -772,7 +1002,7 @@ nav{
 @media (max-width: 768px){
 
     .header-page h1{
-        font-size: 1.3em;
+        font-size: 3em;
     }
 
     .header-page h2{
@@ -799,6 +1029,64 @@ nav{
 }
 
 
+/*CONTACT*/
 
+@media (max-width: 768px){
+
+    .header-page-olivier h2{
+        font-size: 2em;r
+    }
+
+    #container-contact{
+        text-align: left;
+    }
+
+    #flex-contact{
+        display: block;
+    }
+
+    .introContact{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .introContact a{
+        display: block;
+        letter-spacing: 0;
+        line-height: 3;
+    }
+
+    .introContact h2{
+        margin-bottom: 40px;
+    }
+
+    .introContact p{
+        margin-top: 40px;
+    }
+
+    .formulaire{
+        width: 80%;
+        margin: 50px auto;
+        text-align: left;
+    }
+
+    .formulaire .champs{
+        display: block;
+    }
+
+    .formulaire input {
+    width: 98%;
+    margin: 10px auto;
+    }
+
+    .formulaire textarea {
+    width: 98%;
+    margin: 10px auto;
+    }
+
+
+}
 
 

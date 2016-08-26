@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 	<head>
 		<title> PORTFOLIO | Portfolio d'Olivier Boucheau | technicien audiovisuel et professionnel du web </title>
 		<meta charset="utf-8">
@@ -9,16 +9,19 @@
 		<link rel="stylesheet" href="stylesheet/all.css">
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300" rel="stylesheet">
+		<script src='http://code.jquery.com/jquery-1.10.2.min.js' type="text/javascript" ></script>
 	</head>
 
 <body>
 	
-	<div id="container-portfolio">
+	<?php include('header.php') ?>
+	
+	<div id="container-portfolio" class="site-content">
 
 		<section class="header-page">
 			<h1>PORTFOLIO</h1>
 			<h2>Mes projets et travaux audiovisuels et web</h2>
-			<h3>Montage, cadrage, photo, diffusion, création et conception de sites internet</h3>
+			<h3>Vidéo - photo - montage - diffusion  - conception site internet - webdesign - intégration</h3>
 		</section>
 
 
@@ -36,8 +39,7 @@
 						<h1>RMC DÉCOUVERTE</h1>
 						<h2>POSTE</h2>
 						<P>Technicien supérieur de diffusion.</P>
-						<h2>TECHNOLOGIES</h2>
-					<!-- 	<ul>
+											<!-- 	<ul>
 							<li><img src="" alt="MBT"></li>
 							<li><img src="" alt="ORACLE"></li>
 						</ul> -->
@@ -57,8 +59,7 @@
 						<h1>ERICSSON</h1>
 						<h2>POSTE</h2>
 						<P>Technicien supérieur de diffusion.</P>
-						<h2>TECHNOLOGIES</h2>
-					<!-- 	<ul>
+											<!-- 	<ul>
 							<li><img src="" alt="MBT"></li>
 							<li><img src="" alt="ORACLE"></li>
 						</ul> -->
@@ -80,8 +81,7 @@
 						<h1>TF6 & SERIE CLUB</h1>
 						<h2>POSTE</h2>
 						<P>Technicien supérieur de diffusion.</P>
-						<h2>TECHNOLOGIES</h2>
-				<!-- 		<ul>
+										<!-- 		<ul>
 							<li><img src="" alt="MBT"></li>
 						</ul> -->
 						
@@ -100,8 +100,7 @@
 						<h1>TV7</h1>
 						<h2>POSTE</h2>
 						<P>Technicien de diffusion / Monteur / Cadreur.</P>
-						<h2>TECHNOLOGIES</h2>
-<!-- 						<ul>
+						<!-- 						<ul>
 							<li><img src="" alt="MBT"></li>
 							<li><img src="" alt="Adobe créative suite"></li>
 							<li><img src="" alt="Caméra Panasonic"></li>
@@ -124,8 +123,7 @@
 						<h1>CFORGOOD</h1>
 						<h2>POSTE</h2>
 						<P>Intégrateur web / webdesigner / technicien audiovisuel</p>
-						<h2>TECHNOLOGIES</h2>
-<!-- 						<ul>
+						<!-- 						<ul>
 							<li><img src="" alt="HTML/CSS"></li>
 							<li><img src="" alt="JQUERY"></li>
 							<li><img src="" alt="GIT/GITHUB"></li>
@@ -148,8 +146,7 @@
 						<h1>La Clinique des Poupées</h1>
 						<h2>POSTE</h2>
 						<P>Integrateur web / Concepteur Web / SEO / Webmarketing</P>
-						<h2>TECHNOLOGIES</h2>
-					<!-- 	<ul>
+											<!-- 	<ul>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
@@ -164,7 +161,9 @@
 
 			<a href="single-project.php" class="bloc-projet-bruna">
 				<div class="contenu-projet">
-
+				<div class="inprocess">
+					<p>In Process</p>
+				</div>
 					<div class="photo-projet">
 						<img src="images/bruna.svg" alt="logo bruna">
 					</div>
@@ -173,8 +172,7 @@
 						<h1>COUTEAUX BRUNA</h1>
 						<h2>POSTE</h2>
 						<P>Concepteur et integrateur web /Photographe et technicien audiovisuel</P>
-						<h2>TECHNOLOGIES</h2>
-					<!-- 	<ul>
+											<!-- 	<ul>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>
@@ -194,7 +192,6 @@
 						<h1>MOONDAKA SURFBOARDS</h1>
 						<h2>POSTE</h2>
 						<P>Cadreur, Monteur.</P>
-						<h2>TECHNOLOGIE</h2>
 						<!-- <ul>
 							<li><img src="" alt=""></li>
 							<li><img src="" alt=""></li>

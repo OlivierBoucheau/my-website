@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 	<head>
 		<title> PORTFOLIO | Portfolio d'Olivier Boucheau | technicien audiovisuel et professionnel du web </title>
 		<meta charset="utf-8">
@@ -13,13 +13,16 @@
 
 
 <body>
+
+	<?php include("header.php") ?>
+
 		<div id="bandeau-single">
 			<h1>
 				<img src="#" alt="logo">
 			</h1>
 		</div>
 
-	<div id="container-single">
+	<div id="container-single" class="site-content">
 
 		<div id="breadcrumb">
 			<a href="http://localhost/mon-site/portfolio.php">projects</a> / <a href="#" class="on">single-project</a>
