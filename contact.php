@@ -14,68 +14,74 @@
 </head>
 
 <body id="body-contact">
+	<div class="site-container">
+		<div class="site-pusher">
 
-	<?php include("header.php") ?>
+			<?php include("header.php") ?>
 
-	<div id="containerContact" class="site-content">
-		<section class="header-page-olivier">
-			<h1>CONTACT</h1>
-			<h2>Particulier ou une entreprise, vous avez un projet de site web, vous avez besoin de créer du contenu audiovisuel ou seulement besoin d'un conseil ?</br>
-			N'hesitez pas</h2>
-			<h3> Je ne mords pas :)</h3>
-			
-		</section>
-		
-	<div id="flex-contact">
-		<section class="introContact">
-			
-			<h2>Mes Coordonnées</h2>
-			<a "tel:+33638418604">+33 (0)6 38 41 86 04</a>
-			<a href="mailto:olivier.boucheau@gmail.com">olivier.boucheau@gmail.com</a>
-			<p>Vous pouvez également m'envoyer un message via le formulaire de contact. </p>
-		</section>
-
-		<section class="formulaire">
-			<p class="etoile">Les champs marqués d'une étoile <span>*</span> sont obligatoires.</p>
-			<form method="post" action="envoi.php"> 
-				<div class="champs">
-					<label for="societe">Société</label>
-					<input type="text" name="societe" id="societe"/>
-				</div>
+			<div id="containerContact" class="site-content">
+				<section class="header-page">
+					<h1>CONTACT</h1>
+					<h2>Particulier ou une entreprise, vous avez un projet de site web, vous avez besoin de créer du contenu audiovisuel ou seulement besoin d'un conseil ?</br>
+					N'hesitez pas</h2>
+					<h3> Je ne mords pas :)</h3>
+					
+				</section>
 				
-				<div class="champs">
-					<label for="name">Nom / Prénom <span>*</span></label>
-					<input type="text" name="name" id="name" required/>
+				<div id="flex-contact">
+					<section class="introContact">
+						
+						<h2>Mes Coordonnées</h2>
+						<a "tel:+33638418604">+33 (0)6 38 41 86 04</a>
+						<a href="mailto:olivier.boucheau@gmail.com">olivier.boucheau@gmail.com</a>
+						<p>Vous pouvez également m'envoyer un message via le formulaire de contact. </p>
+					</section>
+
+					<section class="formulaire">
+						<p class="etoile">Les champs marqués d'une étoile <span>*</span> sont obligatoires.</p>
+						<form method="post" action="envoi.php"> 
+							<div class="champs">
+								<label for="societe">Société</label>
+								<input type="text" name="societe" id="societe"/>
+							</div>
+							
+							<div class="champs">
+								<label for="name">Nom / Prénom <span>*</span></label>
+								<input type="text" name="name" id="name" required/>
+							</div>
+
+							<div class="champs">
+								<label for="email">e-mail <span>*</span></label>
+								<input type="email" name="email" id="email" required/>
+							</div>
+
+							<div class="champs">
+								<label for="tel">Telephone</label>
+								<input type="tel" name="tel" id="tel"/>
+							</div>
+
+							<div class="champs">
+								<label for="ville">ville <span>*</span></label>
+								<input type="text" name="ville" id="ville" required/>
+							</div>
+
+
+
+							<div class="champs">
+								<label for="message">Message <span>*</span></label>
+								<textarea size="260" name="message" id="message" required></textarea>
+							</div>
+
+							<div class="submit">
+								<input type="submit" class="styleSubmit"></input>
+							</div>
+
+						</form>
+					</section>
 				</div>
 
-				<div class="champs">
-					<label for="email">e-mail <span>*</span></label>
-					<input type="email" name="email" id="email" required/>
-				</div>
-
-				<div class="champs">
-					<label for="tel">Telephone</label>
-					<input type="tel" name="tel" id="tel"/>
-				</div>
-
-				<div class="champs">
-					<label for="ville">ville <span>*</span></label>
-					<input type="text" name="ville" id="ville" required/>
-				</div>
-
-
-
-				<div class="champs">
-					<label for="message">Message <span>*</span></label>
-					<textarea size="260" name="message" id="message" required></textarea>
-				</div>
-
-				<div class="submit">
-					<input type="submit" class="styleSubmit"></input>
-				</div>
-
-			</form>
-		</section>
+			</div>
+            	<div class="site-cache" id="site-cache"></div>
+		</div>
 	</div>
-
-	</div>
+</body>

@@ -9,68 +9,71 @@
 		<link rel="stylesheet" href="stylesheet/all.css">
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300" rel="stylesheet">
-		<script src='http://code.jquery.com/jquery-1.10.2.min.js' type="text/javascript" ></script>
 	</head>
 
 </html>
 
 <body id="body-home">
 
-	<div id="pusher">
+	<div class="site-container">
 
-		<?php include("header.php") ?>
+		<div class="site-pusher">
 
-		<div id="container-home">
+			<?php include("header.php") ?>
 
+			<div class="site-content">
+				<div class="container">
+					<section class="header-page">
+						<h1>MES PASSIONS</br>L'IMAGE ET LE WEB</h1>
+					</section>
 
-			<section class="header-page">
-				<h1>MES PASSIONS</br>L'IMAGE ET LE WEB</h1>
-			</section>
+					<section id="work">
+						<a href="portfolio.php">
+							<div class="bloc-work">
+								<div class="container-project">
+									<div class="description">
+										<h1>Portfolio</h1>
+										<p>Découvrez une partie des travaux que j'ai pu réaliser en Audiovisuel ainsi que dans le Web
+										</br>Intégration Web / Conception / Webdesign / UX-design / Montage / Vidéo / Photo / DIffusion / Réalisation</p>
+									</div>
 
-			<section id="work">
-				<a href="portfolio.php">
-					<div class="bloc-work">
-						<div class="container-project">
-							<div class="description">
-								<h1>Portfolio</h1>
-								<p>Découvrez une partie des travaux que j'ai pu réaliser en Audiovisuel ainsi que dans le Web
-								</br>Intégration Web / Conception / Webdesign / UX-design / Montage / Vidéo / Photo / DIffusion / Réalisation</p>
+									<div class="bloc-photo-1"><!-- 
+						  				image in css -->
+						  			</div>	
+								</div>
 							</div>
+						</a>
+					</section>
 
-							<div class="bloc-photo-1"><!-- 
-				  				image in css -->
-				  			</div>	
-						</div>
+					<section id="about">
+						<a href="olivier.php">
+							<div class="bloc-about">
+								<div class="container-project">
+									<div class="bloc-photo-2">
+						  				<div class="image-bloc">
+						  					<div class="fading-image"></div>
+						  					<!-- image in css -->
+						  				</div>
+						  			</div>
+						  			
+									<div class="description">
+										<h1>Mon Parcours</h1>
+										<p>Hola ! Voici un petit tour d'horizon de ma vie<!-- </br> Attention contenu egocentrique </p> -->
+										</br>Mes compétences / Mes études / Mes loisirs / Mon CV</p>
+									</div>
+								</div>
 
-					</div>
-				</a>
-			</section>
-
-			<section id="about">
-				<a href="olivier.php">
-					<div class="bloc-about">
-						<div class="container-project">
-							<div class="bloc-photo-2">
-				  				<div class="image-bloc">
-				  					<div class="fading-image"></div>
-				  					<!-- image in css -->
-				  				</div>
-				  			</div>
-				  			
-							<div class="description">
-								<h1>Mon Parcours</h1>
-								<p>Hola ! Voici un petit tour d'horizon de ma vie<!-- </br> Attention contenu egocentrique </p> -->
-								</br>Mes compétences / Mes études / Mes loisirs / Mon CV</p>
 							</div>
-						</div>
+						</a>
+					</section>
+				</div>
+			</div>
 
-					</div>
-				</a>
-			</section>
+            <div class="site-cache" id="site-cache"></div>
 
-			<script type="text/javascript">
-				
-			</script>
 		</div>
 	</div>
+
+	<script src='http://code.jquery.com/jquery-1.10.2.min.js' type="text/javascript" ></script>
+
 </body>
