@@ -41,13 +41,14 @@
 
 						<div class="contenu-olivier-pro">
 							<h1>PRO</h1>
-							<p>Hello everybody, Hola todos, Salut tout le monde !</p>
-							<p>En France depuis 7 ans, j'ai développé mes compétences audiovisuelles qui m'ont permis de décrocher plusieurs emplois serieux, premièrement à TV7 Bordeaux en tant que technicien de diffusion, caméraman et monteur, puis à Ericsson Broadcast à Paris où j'ai été embauché comme technicien supérieur de diffusion.</p>
-							<p>Suite à cela j'ai eu une période de transition et ai continué en tant que caméraman/monteur en freelance en même temps qu'un poste dans la maintenance technique d'appareils electroniques à Montpellier</p>
+							<p>En France depuis 7 ans, j'ai développé mes compétences audiovisuelles qui m'ont permis de décrocher plusieurs emplois serieux comme à TV7 Bordeaux en tant que technicien de diffusion, caméraman et monteur, puis à Ericsson Broadcast à Paris où j'ai été embauché comme technicien supérieur de diffusion.</p>
+							<p>Suite à cela j'ai eu une période de transition et ai continué dans l'audiovisuel en freelance en même temps qu'un poste dans la maintenance technique d'appareils electroniques à Montpellier</p>
 							<p>J'ai ensuite pris la décision de recommencer des études dans le web, à l'ECOD, école des Gobelins de Bordeaux où j'ai passé avec succès une license en création et réalisation de produit en ligne. </br>
-							J'ai appris à créer de A à Z un site internet en tenant compte des enjeux techniques, graphiques, marketing et d'accéssibilités.</p>
+							J'ai appris à créer de A à Z un site internet en tenant compte des enjeux techniques, graphiques, marketing de référencement et d'accéssibilités.</p>
 
 							<p>Pour finir, je continue ma petite route professionnelle en suivant mes passions: l'image, la vidéo, la photo, le montage, le design et le web.</p>
+
+							<p><a href="#ancreCV">Je vous laisse le soin d'étudier mon CV ici.</a></p>
 						</div>
 					</section>
 
@@ -55,16 +56,19 @@
 						<div class="contenu-olivier-perso">
 							<h1>PERSONNEL</h1>
 							<p>Je suis né le 30 Août 1986 à Bordeaux, j'ai grandi une petite partie de ma vie en Afrique, une moyenne partie à Toulon et une grande partie dans les Caraibes.</p>
-							<p>Je suis un touche à tout, j'ai pratiqué beaucoup de sport mais ma passion restera à vie le Surf que j'aime surtout pratiquer depuis 15 ans avec mon frère et mes amis.</p>
-							<p>J'aime beaucoup voyager que ce soit dans mon pays comme à l'étranger et pour continuer le cliché du surfeur, je pratique la guitare depuis plus de dix ans également.</p>
-							<p>J'adore la musique, la meilleure pour moi reste le rock, Arctic monkeys passe en boucle mais j'aime quand même à peu près tout les genres musicaux, il y a du bon en tout.</p>
-							<p>Mon travail oblige, je suis aussi passioné d'image, que ce soit vidéo ou photo, j'adore composer, chercher de nouveaux angles et prendre les plus belles images possible. Je fais également beaucoup de montage de mes films personnels.</p>
+							<p>Touche à tout, j'ai pratiqué beaucoup de sports mais ma grande passion reste le Surf que j'aime surtout pratiquer depuis 15 ans avec mon frère et mes amis.</p>
+							<p>J'aime beaucoup voyager que ce soit dans mon pays comme à l'étranger.</p>
+							<p>J'adore la musique, je pratique la guitare depuis 15 ans, j'ai appris en autodidacte et je ne m'en passe plus depuis. J'adore le blues, le jazz, le raggae mais surtout le rock.</p>
+							<p>Mon travail oblige, je suis aussi passioné d'image, que ce soit vidéo ou photo, j'adore composer, chercher de nouveaux angles et prendre les plus belles images possible. Je fais également beaucoup de montages de mes films personnels.</p>
+							<div id="ancreCV"></div>
 						</div>
 
 						<div class="photo-olivier-2">
 							<!-- image in css -->
 						</div>
 					</section>
+
+						
 
 						<div id="link-cv">
 							
@@ -88,11 +92,19 @@
 							</a>
 						</div>
 					</div>
+
+					<?php include('footer.php') ?>
+
 				</div>
-				 <div class="site-cache" id="site-cache"></div>
+
+
+				
+
+				<div class="site-cache" id="site-cache"></div>
 			</div>
 		</div>
 	</div>
+
 </body>
 
 <script type="text/javascript">

@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 
+<?php 
+
+	include('include/bdd.php');
+	$bdd = new PDO($dsn, $user, $pass);
+	$bdd->exec('SET NAMES utf8');
+	$sql = "SELECT * FROM projet";
+	$sth = $bdd->query($sql);
+	$results = $sth->fetchAll(PDO::FETCH_ASSOC);
+	
+
+?>
+
 <html lang="fr">
 	<head>
 		<title> PORTFOLIO | Portfolio d'Olivier Boucheau | technicien audiovisuel et professionnel du web </title>
-		<meta charset="utf-8">
+		<meta charset="ISO-8859-1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" href="stylesheet/all.css">
@@ -29,185 +41,46 @@
 
 				<div id="all-project">
 					<section class="row-projet">
-						
-						<a href="single-project.php" class="bloc-projet-rmc">
-							<div class="contenu-projet">
+						<?php foreach ($results as $key => $result) : ?>
+							<a href="single-project.php?P=<?php echo $result['id']; ?>" class="bloc-projet">
+								<div class="contenu-projet">
 
-								<div class="photo-projet">
-									<img src="images/rmc.svg" alt="logo rmc découverte">
-								</div>
+									<div class="photo-projet">
+										<img src="images/<?php echo $result['logo']; ?>" alt="<?php echo $result['name']; ?>">
+									</div>
 
-								<div class="description-projet">
-									<h1>RMC DÉCOUVERTE</h1>
-									<h2>POSTE</h2>
-									<P>Technicien supérieur de diffusion.</P>
-														<!-- 	<ul>
-										<li><img src="" alt="MBT"></li>
-										<li><img src="" alt="ORACLE"></li>
-									</ul> -->
+									<div class="description-projet">
+										<h1><?php echo $result['name']; ?></h1>
+										<h2>POSTE</h2>
+										<P><?php echo $result['poste']; ?></P>
 									
+									</div>
 								</div>
-							</div>
-						</a>
-						
-						
-						<a href="single-project.php" class="bloc-projet-ericsson">
-							<div class="contenu-projet">
-								<div class="photo-projet">
-									<img src="images/ericsson.svg" alt="logo ericsson">
-								</div>
+							</a>
+						<?php endforeach; ?>
+							<a href="contact.php" class="bloc-projet">
+								<div class="contenu-projet">
 
-								<div class="description-projet">
-									<h1>ERICSSON</h1>
-									<h2>POSTE</h2>
-									<P>Technicien supérieur de diffusion.</P>
-														<!-- 	<ul>
-										<li><img src="" alt="MBT"></li>
-										<li><img src="" alt="ORACLE"></li>
-									</ul> -->
+									<div class="photo-projet">
+										<img src="images/vous.png" alt="logo point d'interrogation">
+									</div>
+
+									<div class="description-projet">
+										<h1>VOUS ?</h1>
+										<h2>POSTE</h2>
+										<P>Demandez moi : contactez moi en cliquant ici</P>
 									
+									</div>
 								</div>
-							</div>
-						</a>
-					</section>
-
-					<section class="row-projet">
-						<a href="single-project.php" class="bloc-projet-tf6">
-							<div class="contenu-projet">
-								<div class="photo-projet">
-									<img src="images/tf6.svg" alt="logo tf6">
-									<img src="images/serieclub.svg" alt="logo serie club">
-								</div>
-
-								<div class="description-projet">
-									<h1>TF6 & SERIE CLUB</h1>
-									<h2>POSTE</h2>
-									<P>Technicien supérieur de diffusion.</P>
-													<!-- 		<ul>
-										<li><img src="" alt="MBT"></li>
-									</ul> -->
-									
-								</div>
-							</div>
-						</a>
-
-						<a href="single-project.php" class="bloc-projet-tv7">
-							<div class="contenu-projet">
-
-								<div class="photo-projet">
-									<img src="images/tv7.svg" alt="logo TV7 Bordeaux">
-								</div>
-
-								<div class="description-projet">
-									<h1>TV7</h1>
-									<h2>POSTE</h2>
-									<P>Technicien de diffusion / Monteur / Cadreur.</P>
-									<!-- 						<ul>
-										<li><img src="" alt="MBT"></li>
-										<li><img src="" alt="Adobe créative suite"></li>
-										<li><img src="" alt="Caméra Panasonic"></li>
-									</ul> -->
-									
-								</div>
-							</div>
-						</a>
-					</section>
-
-					<section class="row-projet">
-						<a href="single-project.php" class="bloc-projet-cforgood">
-							<div class="contenu-projet">
-
-								<div class="photo-projet">
-									<img src="images/cforgood.svg" alt="logo cforgood">
-								</div>
-
-								<div class="description-projet">
-									<h1>CFORGOOD</h1>
-									<h2>POSTE</h2>
-									<P>Intégrateur web / webdesigner / technicien audiovisuel</p>
-									<!-- 						<ul>
-										<li><img src="" alt="HTML/CSS"></li>
-										<li><img src="" alt="JQUERY"></li>
-										<li><img src="" alt="GIT/GITHUB"></li>
-										<li><img src="" alt="SKETCH"></li>
-										<li><img src="" alt="PHOTOSHOP/ILLUSTRATOR"></li>
-									</ul> -->
-									
-								</div>
-							</div>
-						</a>
-
-						<a href="single-project.php" class="bloc-projet-clinique">
-							<div class="contenu-projet">
-
-								<div class="photo-projet">
-									<img src="images/clinique.svg" alt="logo clinique des poupées">
-								</div>
-
-								<div class="description-projet">
-									<h1>La Clinique des Poupées</h1>
-									<h2>POSTE</h2>
-									<P>Integrateur web / Concepteur Web / SEO / Webmarketing</P>
-														<!-- 	<ul>
-										<li><img src="" alt=""></li>
-										<li><img src="" alt=""></li>
-										<li><img src="" alt=""></li>
-									</ul> -->
-									
-								</div>
-							</div>
-						</a>
-					</section>
-
-					<section class="row-projet">
-
-						<a href="single-project.php" class="bloc-projet-bruna">
-							<div class="contenu-projet">
-							<div class="inprocess">
-								<p>In Process</p>
-							</div>
-								<div class="photo-projet">
-									<img src="images/bruna.svg" alt="logo bruna">
-								</div>
-
-								<div class="description-projet">
-									<h1>COUTEAUX BRUNA</h1>
-									<h2>POSTE</h2>
-									<P>Concepteur et integrateur web /Photographe et technicien audiovisuel</P>
-														<!-- 	<ul>
-										<li><img src="" alt=""></li>
-										<li><img src="" alt=""></li>
-										<li><img src="" alt=""></li>
-									</ul> -->
-									
-								</div>
-							</div>
-						</a>
-
-						<a href="single-project.php" class="bloc-projet-moondaka">
-							<div class="contenu-projet">
-								<div class="photo-projet">
-									<img src="images/moondaka.svg" alt="logo moondaka">
-								</div>
-
-								<div class="description-projet">
-									<h1>MOONDAKA SURFBOARDS</h1>
-									<h2>POSTE</h2>
-									<P>Cadreur, Monteur.</P>
-									<!-- <ul>
-										<li><img src="" alt=""></li>
-										<li><img src="" alt=""></li>
-										<li><img src="" alt=""></li>
-									</ul> -->
-									
-								</div>
-							</div>
-						</a>
+							</a>
 					</section>
 				</div>
+
+				<?php include('footer.php') ?>
+
 			</div>
 
-			 <div class="site-cache" id="site-cache"></div>
+			<div class="site-cache" id="site-cache"></div>
 			 
 		</div>
 	</div>

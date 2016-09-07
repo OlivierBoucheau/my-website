@@ -9,8 +9,8 @@
                         <li><a href="contact.php" class="menu-contact">CONTACT</a></li>
                     </ul>
                     <ul class="social">
-                        <li><a href="#"><img src="images/linkedin.png"></a></li>
-                        <li><a href="#"><img src="images/instagram.png"></a></li>
+                        <li><a href="https://fr.linkedin.com/in/olivier-boucheau-1b615097" target="_blank"><img src="images/linkedin.png"></a></li>
+                        <li><a href="https://www.instagram.com/olive_972/" target="_blank"><img src="images/instagram.png"></a></li>
                     </ul>
                 </nav>
             </header>

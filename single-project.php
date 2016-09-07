@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<?php 
+	extract($_GET);
+	include('include/bdd.php');
+	$bdd = new PDO($dsn, $user, $pass);
+	$bdd->exec('SET NAMES utf8');
+	$sql = "SELECT * FROM projet WHERE id=".$P;
+	$sth = $bdd->query($sql);
+	$results = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <html lang="fr">
 	<head>
 		<title> PORTFOLIO | Portfolio d'Olivier Boucheau | technicien audiovisuel et professionnel du web </title>
@@ -12,56 +23,97 @@
 	</head>
 
 
-<body>
+<body id="body-single">
 
-	<?php include("header.php") ?>
+	<div class="site-container">
 
-		<div id="bandeau-single">
-			<h1>
-				<img src="#" alt="logo">
-			</h1>
-		</div>
+		<div class="site-pusher">
 
-	<div id="container-single" class="site-content">
+			<?php include("header.php") ?>
 
-		<div id="breadcrumb">
-			<a href="http://localhost/mon-site/portfolio.php">projects</a> / <a href="#" class="on">single-project</a>
-		</div>
+			<div class="site-content">
+	<?php foreach ($results as $key => $result): ?>
+						
+					
+					<section class="header-page-single">
+						<h1> <?php echo $result['name']; ?> </h1>
+						
+						<div class="link-single">
+							<a href="<?php echo $result['url']; ?>" target="_blank"> Website link </a>
+						</div>
 
-		<div class="link-single">
-			<a href="http://linkzelda.com"> Website link </a>
-		</div>
+						<div id="breadcrumb">
+							<a href="http://localhost/mon-site/portfolio.php">projects</a> / <a href="#" class="on"><?php echo $result['name']; ?></a>
+						</div>
+					</section>
+				
 
-		<div id="description-single">
-			<ul>
-				<li class="list-project-description">
-					<h2>DESCRIPTION</h2>
-					<p> loremipsum ahoheoahao zehozahe roaezrnfoz
-					aefzenfoaz iejfzej fezjfpej fpzeojfp zoekfp zofkpoze kfze</p>
-				</li>
+			<div id="container-single" class="site-content">
 
-				<li class="list-project-description">
-					<H3>TECHNOLOGY</H3>
-					<ul class="lists-description">
-						<li><img src="" alt="Technologie"></li>	
-						<li><img src="" alt="Technologie"></li>
-						<li><img src="" alt="Technologie"></li>			
+
+				<div id="description-single">
+
+					<ul>
+						<li class="list-project-description">
+							<h2>DESCRIPTION</h2>
+							<p><?php echo $result['description']; ?></p>
+						</li>
+
+
+							<a><?php echo $result['download']; ?>telecharger</a>
+
+						<li class="list-project-description">
+							<H3>TECHNOLOGIE</H3>
+							<ul class="lists-description">
+							
+								<li><img src="images/<?php echo $result['technic']; ?>" alt="Technologie"></li>	
+							</ul>
+						</li>
+
+						<li class="list-project-description">
+							<H3>GALLERIE</H3>
+							
+
+							<ul class="lists-description gallerie">
+								<li><img src="images/<?php echo $result['photo']; ?>" alt="Photos projets">
+								</li><img src="images/<?php echo $result['photo2']; ?>" alt="Photos projets"></li>
+							</ul>
+						</li>
+
+						<div><?php echo $result['video']; ?></div>	
+
 					</ul>
-				</li>
+				</div>	
+	<?php endforeach; ?>
+				
+			</div>
 
-				<li class="list-project-description">
-					<H3>GALLERIE</H3>
-					<ul class="lists-description">
-						<li><img src="" alt="Photos projets"></li>	
-						<li><img src="" alt="Photos projets"></li>
-						<li><img src="" alt="Photos projets"></li>			
-					</ul>
-				</li>
-			</ul>
+					<?php include('footer.php') ?>
+
+				</div>
+
+
+				
+
+				<div class="site-cache" id="site-cache"></div>
+			</div>
 		</div>
-
 	</div>
+
 </body>
+
+<script type="text/javascript">
+	<script type="text/javascript">
+		
+		(function($){
+			$('#header__icon').click(function(e){
+			e.preventDefault();
+			$('body').toggleClass('with-sidebar')
+		})
+		})(jQuery);
+		</script>
+</script>
+
 
 
 </html>

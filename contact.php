@@ -32,14 +32,14 @@
 					<section class="introContact">
 						
 						<h2>Mes Coordonnées</h2>
-						<a "tel:+33638418604">+33 (0)6 38 41 86 04</a>
-						<a href="mailto:olivier.boucheau@gmail.com">olivier.boucheau@gmail.com</a>
+						<p><a "tel:+33638418604">+33 (0)6 38 41 86 04</a></p>
+						<p><a href="mailto:olivier.boucheau@gmail.com">olivier.boucheau@gmail.com</a></p>
 						<p>Vous pouvez également m'envoyer un message via le formulaire de contact. </p>
 					</section>
 
 					<section class="formulaire">
 						<p class="etoile">Les champs marqués d'une étoile <span>*</span> sont obligatoires.</p>
-						<form method="post" action="envoi.php"> 
+						<form action="message-envoye.php" method="post" action="envoi.php"> 
 							<div class="champs">
 								<label for="societe">Société</label>
 								<input type="text" name="societe" id="societe"/>
@@ -78,10 +78,18 @@
 
 						</form>
 					</section>
-				</div>
 
+				</div>
+				
+			<?php include('footer.php') ?>
 			</div>
-            	<div class="site-cache" id="site-cache"></div>
+
+
+
+            <div class="site-cache" id="site-cache"></div>
+
 		</div>
 	</div>
+
+
 </body>

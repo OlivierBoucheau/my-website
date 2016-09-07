@@ -6,6 +6,10 @@
     color: black;
 }
 
+a{
+  cursor: pointer;
+}
+
 /*NAV*/
 
 html{
@@ -35,7 +39,7 @@ header a{
   display: flex;
   justify-content: space-around;
   box-shadow: 1px 1px 9px -3px;
-  background: rgba(255,252,242,0.5);
+  background: rgba(255,252,242,1);
 }
 
 .menu a{
@@ -226,7 +230,7 @@ nav{
     background-color: crimson;
 }
 
-#container, #containerContact{
+#container{
 	padding: 5%;
 }
 
@@ -348,7 +352,7 @@ nav{
 }
 
 #container-portfolio{
-    padding: 5%;
+    padding-top: 5%;
     background-color: #0f4880;
 }
 
@@ -356,6 +360,7 @@ nav{
     text-align: center;
     margin: 120px 0;
     color: #FFFCF2;
+    padding: 0 50px;
 }
 
 .header-page h1{
@@ -371,6 +376,7 @@ nav{
 .row-projet{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
@@ -378,7 +384,7 @@ nav{
     text-decoration: none;
 }
 
-.bloc-projet-cforgood,.bloc-projet-ericsson,.bloc-projet-tv7, .bloc-projet-tf6, .bloc-projet-bruna, .bloc-projet-rmc, .bloc-projet-moondaka, .bloc-projet-clinique{
+.bloc-projet{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -386,32 +392,12 @@ nav{
     height: auto;
     background-color: black;
     padding: 20px;
+    margin-bottom: 40px;
     transition: 0.4s ease-in-out;
 }
 
-.bloc-projet-cforgood:hover{
+.bloc-projet:hover{
     background-color: #36D3DA;
-}
-.bloc-projet-ericsson:hover{
-    background-color: #00285E;
-}
-.bloc-projet-rmc:hover{
-    background-color: #8ECEE7;
-}
-.bloc-projet-tf6:hover{
-    background-color: #ED1B24;
-}
-.bloc-projet-tv7:hover{
-    background-color: #DE1213;
-}
-.bloc-projet-bruna:hover{
-    background-color: #CAD4DD;
-}
-.bloc-projet-moondaka:hover{
-    background-color: gold;
-}
-.bloc-projet-clinique:hover{
-    background-color: #E83B69;
 }
 
 .contenu-projet{
@@ -493,12 +479,45 @@ nav{
     padding-top: 8%;
 }
 
+.client{
+  background: #FFFCF2;
+  text-align: center;
+  width: 100%;
+}
+
+.client ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.client img{
+  width: 25%;
+}
+
+.client li{
+  list-style-type: none;
+}
+
 /*SINGLE PROJECT*/
 
-#container-single{
-    padding: 0 50px 50px 50px;
+
+.header-page-single{
     text-align: center;
-    background-color: floralwhite;
+    color: #FFFCF2;
+    padding: 100px 50px;
+    background: #1A1A1A;
+}
+
+#container-single{
+    padding: 20px 100px;
+    text-align: center;
+    background-color: #1A1A1A;
+}
+
+#container-single a, #container-single h1, #container-single h2, #container-single h3, #container-single p{
+     color: #FFFCF2;
 }
 
 #bandeau-single{
@@ -511,7 +530,7 @@ nav{
 }
 
 .link-single{
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .link-single a{
@@ -522,18 +541,20 @@ nav{
     width: 50%;
     margin: 50px auto;
     padding: 0 3%;
-    color: #05182a;
+    color: #FFFCF2;
     border-radius: 55px;
     border: black 3px solid;
 }
 
 .link-single a:hover{
-    color: coral;
+    color: #05182a;
+    background-color: #FFFCF2;
 }
 
 #container-single .lists-description{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #container-single ul{
@@ -541,16 +562,22 @@ nav{
     padding: 0;
 }
 
-#description-single .list-project-description{
-    margin-top: 100px;
-}
 
 #breadcrumb {
     padding-top: 50px;
 }
 
-#breadcrumb a{
-    color: black;
+#breadcrumb a:hover{
+    color: crimson;
+}
+
+#breadcrumb a {
+    color: #FFFCF2;
+    text-decoration: underline;
+}
+
+.header-page a{
+    color: #FFFCF2;
     text-decoration: none;
 }
 
@@ -558,6 +585,28 @@ nav{
     font-family: 'amatic';
     font-weight: 700;
     font-style: unset;
+}
+
+.list-project-description{
+  margin-bottom: 60px;
+}
+
+.list-project-description a{
+  text-decoration: underline;
+}
+
+#description-single a:hover{
+  color: crimson;
+}
+
+.download-file{
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-size: 1.5em
+}
+
+.gallerie{
+  margin-top: 20px;
 }
 
 /*PAGE-OLIVIER*/
@@ -628,6 +677,14 @@ nav{
     width: 70%;
 }
 
+.contenu-olivier-pro a{
+  color: #05182a;
+  letter-spacing: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .photo-olivier-1, .photo-olivier-2{
     min-width: 30%;
     margin: 10px;
@@ -635,7 +692,7 @@ nav{
 
 .photo-olivier-1{
     position: relative;
-    background: url('../images/olivierProtrait2.jpg') no-repeat center;
+    background: url('../images/olivierPortrait2.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -659,7 +716,7 @@ nav{
 
 .photo-olivier-2{
     position: relative;
-    background: url('../images/olivierPro.jpg') no-repeat center;
+    background: url('../images/olivierPlage.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -672,7 +729,7 @@ nav{
     left: 0;
     opacity: 0;
     transition: 0.3s ease-in-out;
-    background: url('../images/olivierProtrait2.jpg') red no-repeat center center;
+    background: url('../images/olivierSurf.jpg') red no-repeat center center;
     background-size: cover;
 }
 
@@ -725,6 +782,8 @@ nav{
     margin-top: 20px;
 }
 
+
+
 /*PAGE CONTACT*/
 
 #body-contact{
@@ -732,8 +791,7 @@ nav{
 }
 
 #containerContact{
-  background: coral;
-  padding: 5%;
+  padding-top: 5%;
 }
 
 #containerContact h1, #containerContact h2, #containerContact h3{
@@ -742,7 +800,8 @@ nav{
 
 #flex-contact{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 .introContact{
@@ -755,6 +814,7 @@ nav{
 .introContact p{
     text-align: center;
     font-family: 'amatic';
+    font-size: 1em;
     letter-spacing: 2px;
     color: #05182a;
     margin-top: 80px;
@@ -835,6 +895,97 @@ input:focus, textarea:focus{
   border: #09d7d9 solid 2px;
 }
 
+
+/*FOOTER*/
+
+.image-arbre{
+  background: url(../images/logo.svg) no-repeat center center;
+  background-size: contain;
+  height: 100%;
+  max-width: 100%;
+}
+
+
+footer{
+  background: #05182a;
+  text-align: center;
+  padding: 40px 40px;
+}
+
+footer nav{
+  height: auto;
+}
+
+footer p{
+  font-family: 'Josefin';
+  font-size: 0.8em;
+  margin-top: 50px;
+}
+
+footer h1{
+  font-size: 1.5em;
+}
+
+footer li{
+  list-style-type: none;
+}
+
+.global-menu-footer{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+.item-menu-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-menu-footer{
+  padding: 0;
+}
+
+.menu-footer img{
+  width: 100%;
+  height: auto;
+}
+
+.tech{ 
+    padding: 40px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 50px 0;
+}
+
+.tech ul{
+  padding: 0;
+}
+
+.menu-footer a{
+  text-decoration: none;
+  font-size: 3em;
+  color: #FFFCF2;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.info-site a{
+    color: #FFFCF2;
+    font-family: 'Josefin';
+    font-size: 0.8em;
+}
+
+.imaaage{
+  width: 100%;
+  height: 150px;
+}
 
 /*RESPONSIVE*/
 
@@ -1064,8 +1215,6 @@ input:focus, textarea:focus{
 
 }
 
-
-
 /*INDEX*/
 
 @media (max-width:768px){
@@ -1132,7 +1281,7 @@ input:focus, textarea:focus{
         width: 50%;
         margin: 40px auto;
         padding: 40% 0;
-        background: url('../images/olivierPro.jpg') no-repeat center;
+        background: url('../images/olivierPortrait2.jpg') no-repeat center;
         background-size: cover;
     }
 
@@ -1185,7 +1334,8 @@ input:focus, textarea:focus{
         width: 100%;
     }
 
-    .bloc-projet-cforgood,.bloc-projet-ericsson,.bloc-projet-tv7, .bloc-projet-tf6, .bloc-projet-bruna, .bloc-projet-rmc, .bloc-projet-moondaka, .bloc-projet-clinique{
+    .bloc-projet{
+        display: block;
         width: 70%;
         margin: 0 auto 50px;
     }
@@ -1254,7 +1404,65 @@ input:focus, textarea:focus{
     margin: 10px auto;
     }
 
+    /*FOOTER*/
 
+@media (max-width: 768px){
+  .footer-info{
+    padding-left: 0;
+  }
+
+  .image-arbre{
+      background: url('../images/logo-tab.svg') no-repeat center center ;
+      background-size: contain;
+    }
+
+  .tech {
+        padding: 2%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+  }
 }
 
+@media (max-width: 425px){
+
+
+      .image-arbre{
+          background: url('../images/logo-mobile.svg') no-repeat center center ;
+          background-size: contain;
+        }
+  
+      .tech{ 
+          padding: 40px;
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          margin: 50px 0;
+       }
+      .menu-footer a{
+          text-decoration: none;
+          font-size: 3em;
+          color: #FFFCF2;
+       }
+
+      .footer-info{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: stretch;
+       }
+
+       .item-menu-footer{
+          display: flex;
+          flex-direction: column;
+       }
+
+       .item-menu-footer li{
+          padding: 20px;
+       }
+
+       .info-site{
+          display: flex;
+          flex-direction: column;
+       }
+
+}
 

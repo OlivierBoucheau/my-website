@@ -34,7 +34,7 @@
 									<div class="description">
 										<h1>Portfolio</h1>
 										<p>Découvrez une partie des travaux que j'ai pu réaliser en Audiovisuel ainsi que dans le Web
-										</br>Intégration Web / Conception / Webdesign / UX-design / Montage / Vidéo / Photo / DIffusion / Réalisation</p>
+										</br> <strong>Intégration Web</strong> | <strong>Conception</strong> | <strong>Webdesign</strong> | <strong>UX-design</strong> | <strong>Montage</strong> | <strong>Vidéo</strong> | <strong>Photo</strong> | <strong>DIffusion</strong> | <strong>Réalisation</strong></p>
 									</div>
 
 									<div class="bloc-photo-1"><!-- 
@@ -57,9 +57,9 @@
 						  			</div>
 						  			
 									<div class="description">
-										<h1>Mon Parcours</h1>
-										<p>Hola ! Voici un petit tour d'horizon de ma vie<!-- </br> Attention contenu egocentrique </p> -->
-										</br>Mes compétences / Mes études / Mes loisirs / Mon CV</p>
+										<h1>Mon Chemin</h1>
+										<p>Hola ! je m'apelle Olivier Boucheau et voici un petit tour d'horizon de ma vie </br> Attention contenu egocentrique </p>
+										</br><strong>Mes compétences</strong> | <strong>Mes études</strong> | <strong>Mes loisirs</strong> | <strong>Mon CV</strong></p>
 									</div>
 								</div>
 
@@ -67,12 +67,19 @@
 						</a>
 					</section>
 				</div>
+
+				<?php include('footer.php') ?>
+				
 			</div>
+
+
+			
 
             <div class="site-cache" id="site-cache"></div>
 
 		</div>
 	</div>
+
 
 	<script src='http://code.jquery.com/jquery-1.10.2.min.js' type="text/javascript" ></script>
 
