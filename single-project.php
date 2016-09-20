@@ -11,9 +11,12 @@
 
 ?>
 
+
 <html lang="fr">
 	<head>
-		<title> PORTFOLIO | Portfolio d'Olivier Boucheau | technicien audiovisuel et professionnel du web </title>
+		<?php foreach ($results as $key => $result): ?>
+		<title> PORTFOLIO Olivier Boucheau | fiche projet <?php echo $result['name'];?> | <?php echo $result['poste'];?></title>
+		<?php endforeach; ?>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="reset.css">
@@ -53,6 +56,9 @@
 
 				<div id="description-single">
 
+					<p>Pour plus d'informations rendez-vous sur </p>
+					<a href="https://fr.linkedin.com/in/olivier-boucheau-1b615097" target="_blank"><img src="images/linke-footer.png"></a>
+
 					<ul>
 						<li class="list-project-description">
 							<h2>DESCRIPTION</h2>
@@ -60,13 +66,11 @@
 						</li>
 
 
-							<a><?php echo $result['download']; ?>telecharger</a>
 
 						<li class="list-project-description">
 							<H3>TECHNOLOGIE</H3>
-							<ul class="lists-description">
-							
-								<li><img src="images/<?php echo $result['technic']; ?>" alt="Technologie"></li>	
+							<ul class="lists-description-technic">
+								<li> <p><?php echo $result['technic']; ?> </p></li>	
 							</ul>
 						</li>
 
@@ -75,8 +79,8 @@
 							
 
 							<ul class="lists-description gallerie">
-								<li><img src="images/<?php echo $result['photo']; ?>" alt="Photos projets">
-								</li><img src="images/<?php echo $result['photo2']; ?>" alt="Photos projets"></li>
+								<li><a href="images/<?php echo $result['photo']; ?>" target="_blank"><img src="images/<?php echo $result['photo']; ?>" alt="Photos projets"></a>
+								</li><a href="images/<?php echo $result['photo-2']?>" target="_blank"><img src="images/<?php echo $result['photo-2']; ?>" alt="Photos projets"></a></li>
 							</ul>
 						</li>
 

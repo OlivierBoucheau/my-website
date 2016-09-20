@@ -15,15 +15,13 @@
 
 
 <body id="body-olivier">
-
 	<div class="site-container">
-
 		<div class="site-pusher">
 
 			<?php include("header.php") ?>
 
-			<div class="site-content">
-				<div class="container">
+			<div id="container-olivier" class="site-content site-content-olivier fade">
+				
 					<section class="header-page">
 						<h1>OLIVIER "Scratto" BOUCHEAU</h1>
 						<h2>Technicien audiovisuel / Professionnel du web / Amateur de chocolat et de pizzas.</h2>
@@ -48,7 +46,7 @@
 
 							<p>Pour finir, je continue ma petite route professionnelle en suivant mes passions: l'image, la vidéo, la photo, le montage, le design et le web.</p>
 
-							<p><a href="#ancreCV">Je vous laisse le soin d'étudier mon CV ici.</a></p>
+							<p><a class="ancre" href="#ancreCV">Je vous laisse le soin d'étudier mon CV ici.</a></p>
 						</div>
 					</section>
 
@@ -95,7 +93,6 @@
 
 					<?php include('footer.php') ?>
 
-				</div>
 
 
 				
@@ -119,5 +116,15 @@
 		</script>
 </script>
 
+<script>
+	$(document).ready(function() {
+		$('.ancre').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
 
 </html>

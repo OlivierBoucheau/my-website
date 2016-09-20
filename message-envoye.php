@@ -13,18 +13,26 @@
 
 </head>
 
+<?php 
+	$message = $_POST['message'];
+	$from = $_POST['name'];
+	mail('olivier.boucheau@gmail.com', 'formulaire de contact', $message, $from);
+ ?>
+
 <body id="body-contact">
 	<div class="site-container">
 		<div class="site-pusher">
 
 			<?php include("header.php") ?>
 
-			<div id="containerContact" class="site-content">
-				
-				<p>Bonjour <?php echo htmlspecialchars($_POST['name']) ?>, votre message a bien été envoyé, merci beaucoup je reviendrais vers vous le plus vite possible.</p>
 
-				<a href="index.php">Retour à l'accueil</a>
-				
+
+			<div id="containerContact" class="site-content">
+				<div class="message-envoye">
+					<p>Bonjour <?php echo htmlspecialchars($_POST['name']) ?>, votre message a bien été envoyé, merci beaucoup je reviendrais vers vous le plus vite possible.</p>
+
+					<a href="index.php">Retour à l'accueil</a>
+				</div>
 			<?php include('footer.php') ?>
 			
 			</div>

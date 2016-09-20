@@ -24,13 +24,13 @@
 		<script src='http://code.jquery.com/jquery-1.10.2.min.js' type="text/javascript" ></script>
 	</head>
 
-<body id="body-portfolio">
+<body>
 	<div class="site-container">
 		<div class="site-pusher">
 
 			<?php include('header.php') ?>
 			
-			<div id="container-portfolio" class="site-content">
+			<div id="container-portfolio" class="site-content site-content-portfolio fade">
 
 				<section class="header-page">
 					<h1>PORTFOLIO</h1>

@@ -19,7 +19,7 @@
 
 			<?php include("header.php") ?>
 
-			<div id="containerContact" class="site-content">
+			<div id="containerContact" class="site-content site-content-contact fade">
 				<section class="header-page">
 					<h1>CONTACT</h1>
 					<h2>Particulier ou une entreprise, vous avez un projet de site web, vous avez besoin de créer du contenu audiovisuel ou seulement besoin d'un conseil ?</br>
