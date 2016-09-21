@@ -39,7 +39,7 @@
 
 						<div class="contenu-olivier-pro">
 							<h1>PRO</h1>
-							<p>En France depuis 7 ans, j'ai développé mes compétences audiovisuelles qui m'ont permis de décrocher plusieurs emplois serieux comme à TV7 Bordeaux en tant que technicien de diffusion, caméraman et monteur, puis à Ericsson Broadcast à Paris où j'ai été embauché comme technicien supérieur de diffusion.</p>
+							<p>De retour en Metropole depuis 2009, j'ai développé mes compétences audiovisuelles qui m'ont permis de décrocher plusieurs emplois serieux comme à TV7 Bordeaux en tant que technicien de diffusion, caméraman et monteur, puis à Ericsson Broadcast à Paris où j'ai été embauché comme technicien supérieur de diffusion.</p>
 							<p>Suite à cela j'ai eu une période de transition et ai continué dans l'audiovisuel en freelance en même temps qu'un poste dans la maintenance technique d'appareils electroniques à Montpellier</p>
 							<p>J'ai ensuite pris la décision de recommencer des études dans le web, à l'ECOD, école des Gobelins de Bordeaux où j'ai passé avec succès une license en création et réalisation de produit en ligne. </br>
 							J'ai appris à créer de A à Z un site internet en tenant compte des enjeux techniques, graphiques, marketing de référencement et d'accéssibilités.</p>
@@ -54,9 +54,9 @@
 						<div class="contenu-olivier-perso">
 							<h1>PERSONNEL</h1>
 							<p>Je suis né le 30 Août 1986 à Bordeaux, j'ai grandi une petite partie de ma vie en Afrique, une moyenne partie à Toulon et une grande partie dans les Caraibes.</p>
-							<p>Touche à tout, j'ai pratiqué beaucoup de sports mais ma grande passion reste le Surf que j'aime surtout pratiquer depuis 15 ans avec mon frère et mes amis.</p>
+							<p>Touche à tout, j'ai pratiqué beaucoup de sports mais ma grande passion reste le Surf que j'aime surtout pratiquer depuis une dizaine d'années avec mon frère et mes amis.</p>
 							<p>J'aime beaucoup voyager que ce soit dans mon pays comme à l'étranger.</p>
-							<p>J'adore la musique, je pratique la guitare depuis 15 ans, j'ai appris en autodidacte et je ne m'en passe plus depuis. J'adore le blues, le jazz, le raggae mais surtout le rock.</p>
+							<p>J'adore la musique, je pratique la guitare depuis une dizaine d'année également, j'ai appris en autodidacte et je ne m'en passe plus depuis. J'adore le blues, le jazz, le raggae mais surtout le rock.</p>
 							<p>Mon travail oblige, je suis aussi passioné d'image, que ce soit vidéo ou photo, j'adore composer, chercher de nouveaux angles et prendre les plus belles images possible. Je fais également beaucoup de montages de mes films personnels.</p>
 							<div id="ancreCV"></div>
 						</div>

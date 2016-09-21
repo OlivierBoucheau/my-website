@@ -306,7 +306,7 @@ nav{
 }
 
 .bloc-about:hover{
-    background-color: #04B5FF;
+    background-color: #FFFCF2;
 }
 
 .container-project{
@@ -384,6 +384,7 @@ nav{
 }
 
 #all-project{
+    overflow: scroll;
     width: 100%;
 }
 
@@ -433,7 +434,7 @@ nav{
 }
 
 .bloc-projet:hover{
-    background-color: #36D3DA;
+    background-color: coral;
 }
 
 .contenu-projet{
@@ -610,7 +611,6 @@ nav{
 
 #breadcrumb a {
     color: #FFFCF2;
-    text-decoration: underline;
 }
 
 .header-page a{
@@ -622,6 +622,8 @@ nav{
     font-family: 'amatic';
     font-weight: 700;
     font-style: unset;
+    color: crimson;
+    text-decoration: underline;
 }
 
 .list-project-description{
@@ -794,6 +796,12 @@ nav{
 #link-cv a{
     text-decoration: none;
     color: #05182a;
+
+    transition: ease-in-out .3s;
+}
+
+#link-cv h2:hover{
+    color: black;
 }
 
 #link-cv h2{
@@ -804,9 +812,17 @@ nav{
 .cta-en{
     background: url('../images/drapeau-en.png') steelblue no-repeat right;
 }
+.cta-en:hover{
+    background: url('../images/drapeau-en.png') white no-repeat right;
+    transition: ease-in-out .3s;
+}
 
 .cta-fr{
     background: url('../images/drapeau-fr.png') steelblue no-repeat right;
+}
+.cta-fr:hover{
+    background: url('../images/drapeau-fr.png') white no-repeat right;
+    transition: ease-in-out .3s;
 }
 
 .linkedin {
@@ -816,6 +832,13 @@ nav{
 
 .linkedin img{
     margin-top: 20px;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.linkedin img:hover{
+    background: white;
+    transition: ease-in-out .3s;
 }
 
 
@@ -914,7 +937,13 @@ input[type=submit]{
   cursor: pointer;
   font-size: 1.5em;
   font-family: 'Josefin';
+}
 
+input[type=submit]:hover{
+  color: black;
+  background-color: white;
+  border: black solid 4px;
+  transition: ease-in-out .3s;
 }
 
 .submit{

@@ -46,7 +46,7 @@
 								<div class="contenu-projet">
 
 									<div class="photo-projet">
-										<img src="images/<?php echo $result['logo']; ?>" alt="<?php echo $result['name']; ?>">
+										<img class="lazy" src="images/<?php echo $result['logo']; ?>" alt="<?php echo $result['name']; ?>">
 									</div>
 
 									<div class="description-projet">
@@ -68,7 +68,7 @@
 									<div class="description-projet">
 										<h1>VOUS ?</h1>
 										<h2>POSTE</h2>
-										<P>Demandez moi : contactez moi en cliquant ici</P>
+										<P>Ce que vous voulez : contactez moi en cliquant ici</P>
 									
 									</div>
 								</div>
@@ -79,11 +79,12 @@
 				<?php include('footer.php') ?>
 
 			</div>
-
-			<div class="site-cache" id="site-cache"></div>
-			 
+			<div class="site-cache" id="site-cache"></div> 
 		</div>
 	</div>
+
+
+
 </body>
 
 </html>

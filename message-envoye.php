@@ -13,8 +13,11 @@
 
 </head>
 
+
+
 <?php 
 	$message = $_POST['message'];
+	$headers = 'FROM: site@local.com';
 	$from = $_POST['name'];
 	mail('olivier.boucheau@gmail.com', 'formulaire de contact', $message, $from);
  ?>
